@@ -30,7 +30,7 @@ pipeline {
         stage('Start Application') {
             steps {
                 // Start the Node.js application directly
-                bat 'node app.js'
+                bat 'node index.js'
             }
         }
     }
