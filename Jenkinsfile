@@ -27,10 +27,17 @@ pipeline {
             }
         }
 
+        stage('Build Docker Image') {
+            steps {
+                // Build Docker image
+                bat 'docker build -t my-node-app .'
+            }
+        }
+
         stage('Start Application') {
             steps {
-                // Start the Node.js application directly
-                bat 'node index.js'
+                // Run the Docker container on port 3000
+                bat 'docker run -d -p 3000:3000 my-node-app'
             }
         }
     }
