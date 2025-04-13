@@ -16,28 +16,28 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Install dependencies using npm
-                bat 'npm install'
+                sh 'npm install'
             }
         }
 
         stage('Run Tests') {
             steps {
                 // Replace with your actual test command
-                bat 'npm test || echo "Skipping failed tests for deployment"'
+                sh 'npm test || echo "Skipping failed tests for deployment"'
             }
         }
 
         stage('Build Docker Image') {
             steps {
                 // Build Docker image
-                bat 'docker build -t my-node-app .'
+                sh 'docker build -t my-node-app .'
             }
         }
 
         stage('Start Application') {
             steps {
                 // Run the Docker container on port 3000
-                bat 'docker run -d -p 3000:3000 my-node-app'
+                sh 'docker run -d -p 3000:3000 my-node-app'
             }
         }
     }
