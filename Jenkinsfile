@@ -10,7 +10,7 @@
             steps {
                 // Checkout the main branch of your repository
                 //git branch: 'main', url: 'https://github.com/pratham1248/Node-Js-App.git'
-                echo 'checkout stage run success'
+                echo 'checkout stage run success loreum'
                 echo 'testing'
             }
         }
