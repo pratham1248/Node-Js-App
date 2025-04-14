@@ -20,6 +20,7 @@
                 // Check if the code was successfully checked out
                 //sh 'git status'
                 echo 'Verify Checkout stage run success'
+                echo 'testing'
             }
         }
 
@@ -28,6 +29,7 @@
                 // Install dependencies using npm
                 //sh 'npm install'
                 echo 'Install Dependencies stage run success'
+                echo 'testing'
             }
         }
 
