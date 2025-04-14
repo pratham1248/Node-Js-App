@@ -18,7 +18,7 @@ pipeline {
             steps {
                 // Check if the code was successfully checked out
                 //sh 'git status'
-                
+                echo 'Verify Checkout stage run success'
             }
         }
 
