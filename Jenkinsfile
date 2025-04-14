@@ -2,7 +2,7 @@
     agent any
 
     tools {
-        nodejs 'NodeJS' // Ensure this matches the NodeJS configuration in Jenkins check
+        nodejs 'NodeJS' // Ensure this matches the NodeJS configuration in Jenkins check hello 123
     }
 
     stages {
