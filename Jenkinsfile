@@ -1,8 +1,8 @@
-pipeline {
+ pipeline {
     agent any
 
     tools {
-        nodejs 'NodeJS' // Ensure this matches the NodeJS configuration in Jenkins
+        nodejs 'NodeJS' // Ensure this matches the NodeJS configuration in Jenkins check
     }
 
     stages {
