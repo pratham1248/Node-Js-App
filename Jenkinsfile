@@ -13,6 +13,13 @@ pipeline {
             }
         }
 
+        stage('Verify Checkout') {
+            steps {
+                // Check if the code was successfully checked out
+                sh 'git status'
+            }
+        }
+
         stage('Install Dependencies') {
             steps {
                 // Install dependencies using npm
@@ -56,3 +63,4 @@ pipeline {
         }
     }
 }
+
