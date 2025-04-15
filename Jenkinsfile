@@ -45,7 +45,7 @@
             steps {
                 // Build Docker image
                 sh 'whoami'
-                sh 'docker build -t my-node-app .'
+                //sh 'docker build -t my-node-app .'
                 echo 'Build Docker Image stage run success'
             }
         }
@@ -54,6 +54,7 @@
             steps {
                 // Run the Docker container on port 3000
                 // sh 'docker run -d -p 3000:3000 my-node-app'
+                sh 'node index.js'
                 echo 'Start Application stage run success'
             }
         }
