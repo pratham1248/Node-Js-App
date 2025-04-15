@@ -44,6 +44,7 @@
         stage('Build Docker Image') {
             steps {
                 // Build Docker image
+                sh 'whoami'
                 sh 'docker build -t my-node-app .'
                 echo 'Build Docker Image stage run success'
             }
