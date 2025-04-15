@@ -9,7 +9,7 @@
         stage('Checkout Code') {
             steps {
                 // Checkout the main branch of your repository
-                //git branch: 'main', url: 'https://github.com/pratham1248/Node-Js-App.git'
+                git branch: 'main', url: 'https://github.com/pratham1248/Node-Js-App.git'
                 echo 'checkout stage run success loreum'
                 echo 'testing'
             }
@@ -18,7 +18,7 @@
         stage('Verify Checkout') {
             steps {
                 // Check if the code was successfully checked out
-                //sh 'git status'
+                sh 'git status'
                 echo 'Verify Checkout stage run success'
                 echo 'testing'
             }
@@ -27,7 +27,7 @@
         stage('Install Dependencies') {
             steps {
                 // Install dependencies using npm
-                //sh 'npm install'
+                sh 'npm install'
                 echo 'Install Dependencies stage run success'
                 echo 'testing'
             }
@@ -36,7 +36,7 @@
         stage('Run Tests') {
             steps {
                 // Replace with your actual test command
-                //sh 'npm test || echo "Skipping failed tests for deployment"'
+                sh 'npm test || echo "Skipping failed tests for deployment"'
                 echo 'Run Tests stage run success'
             }
         }
